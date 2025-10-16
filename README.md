@@ -21,7 +21,7 @@
 # =========================
 # 3. Committing Changes
 # =========================
-g<br>it commit -m "message"
+<br>git commit -m "message"
 
 # =========================
 # 4. Branching & Merging
