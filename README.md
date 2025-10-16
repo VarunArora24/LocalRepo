@@ -2,105 +2,67 @@
 # =========================
 # 1. Git Setup & Configuration
 # =========================
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-git config --list
-git config user.name
-git init
-git clone <url>
+<br>git config --global user.name "Your Name"
+<br>git config --global user.email "you@example.com"
+<br>git config --list
+<br>git config user.name
+<br>git init
+<br>git clone <url>
 
 # =========================
 # 2. Working with Files
 # =========================
-git status
-git add <file>
-git add .
-git restore --staged <file>
-git restore <file>
+<br>git status
+<br>git add <file>
+<br>git add .
+<br>git restore --staged <file>
+<br>git restore <file>
 
 # =========================
 # 3. Committing Changes
 # =========================
-git commit -m "message"
-git commit -am "message"
-git commit --amend -m "new message"
-git log
-git log --oneline
-git log --oneline --graph --all
+g<br>it commit -m "message"
 
 # =========================
 # 4. Branching & Merging
 # =========================
-git branch
-git branch <name>
-git checkout <name>
-git checkout -b <name>
-git merge <branch>
-git branch -d <name>
-git branch -D <name>
-git branch -m <new-name>
+<br>git branch
+<br>git branch <name>
+<br>git merge <branch>
+<br>git branch -M <new-name>
 
 # =========================
 # 5. Remote Repositories
 # =========================
-git remote add origin <url>
-git remote -v
-git push origin <branch>
-git push --all origin
-git pull origin <branch>
-git fetch origin
-git remote remove <name>
+<br>git remote add origin <url>
+<br>git remote -v
+<br>git push origin <branch>
+<br>git push --all origin
+<br>git pull origin <branch>
+<br>git fetch origin
+<br>git remote remove <name>
+<br>
+# =========================
+# 6. Clean Up
+# =========================
+<br>git clean -f
+<br>git clean -fd
+<br>git clean -xfd
 
 # =========================
-# 6. Stash (Temporary Storage)
+# 7. Info & Help
 # =========================
-git stash
-git stash apply
-git stash list
-git stash drop
-git stash clear
+<br>git log <file>
+<br>git blame <file>
+<br>git show
+<br>git branch --show-current
+<br>git help <command>
 
 # =========================
-# 7. Undoing & Reverting
-# =========================
-git reset --soft HEAD~1
-git reset --hard HEAD~1
-git reset --hard <commit-id>
-git revert <commit-id>
-git diff
-git diff --staged
-
-# =========================
-# 8. Tags
-# =========================
-git tag <name>
-git tag -a <name> -m "message"
-git tag
-git tag -d <name>
-git push origin <tag>
-git push --tags
-
-# =========================
-# 9. Clean Up
-# =========================
-git clean -f
-git clean -fd
-git clean -xfd
-
-# =========================
-# 10. Info & Help
-# =========================
-git log <file>
-git blame <file>
-git show
-git branch --show-current
-git help <command>
-
-# =========================
-# 11. Common Combos
+# 8. Common Combos
 # =========================
 # Initialize → Add → Commit
-git init && git add . && git commit -m "first commit"
+<br>git init && git add . && git commit -m "first commit"
 
 # Clone → Create branch → Push
-git clone <url> && git checkout -b new-feature && git push -u origin new-feature
+<br>git clone <url> && git checkout -b new-feature && git push -u origin new-feature
